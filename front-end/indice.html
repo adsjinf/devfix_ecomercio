@@ -11,49 +11,56 @@
 </head>
 
 <body>
-    <div class="pagina">
+    <div class="site">
         <!-- CABEÇALHO -->
         <header>
             <div class="logo">
                 <i class="fa-solid fa-bolt"></i>
                 <h1>TechStore</h1>
             </div>
-            <div class="pesqu">
+            <div class="search-container">
                 <input type="text" placeholder="Buscar produtos...">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </header>
 
         <!-- MENU SUPERIOR -->
-        <nav>
-            <button>
-                <i class="fa-solid fa-border-all"></i>
-
-            </button>
-            <button>
-                <i class="fa-solid fa-mobile-retro"></i>
-            </button>
-            <button>
-                <i class="fa-solid fa-laptop"></i>
-            </button>
-            <button>
-                <i class="fa-solid fa-headphones"></i>
-            </button>
-            <button>
-                <i class="fa-solid fa-keyboard"></i>
-            </button>
-            <button>
-                <i class="fa-solid fa-clock"></i>
-            </button>
-        </nav>
+        <div class="categories-container">
+            <nav class="categories-bar">
+                <button class="category-btn  active">
+                    <i class="fa-solid fa-border-all"></i>
+                    Todos
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-mobile-retro"></i>
+                    Smartphone
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-laptop"></i>
+                    Notebooks
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-headphones"></i>
+                    Fones
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-keyboard"></i>
+                    Acessórios
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-clock"></i>
+                    SmartWatches
+                </button>
+            </nav>
+        </div>
         <!-- HERO -->
-        <section>
+        <section class="hero-section">
             <h2>Black Friday Antecipada</h2>
             <p>Até 50% de desconto em produtos selecionados</p>
         </section>
 
         <!-- ITENS -->
-        <main>
+        <main class="products-container">
 
         </main>
 

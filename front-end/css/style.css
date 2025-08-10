@@ -6,7 +6,109 @@
   color: inherit;  /* evita cores “do nada” em filhos */   
 }
 
-h1 {
-    color: brown;
-    font-size: 100px;
+:root {
+    --primary-color: #FF4111;
+    --secondary-color: #2C3E50;
+    --accent-color: #3498DB;
+    --text-color: #2C3E50;
+    --light-gray: #F8F9FA;
+    --border-color: #E9ECEF;
+    --white-color: #FFFFFF;
+    --hover-btn: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-gray);
+  line-height: 1.6;
+}
+
+header {
+  background-color: val(--white-color);
+  position: sticky;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.logo i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-gray);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.search-container  input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-container i {
+  color: var(--primary-color);
+}
+
+.categories-container {
+  background-color: var(--secondary-color);
+}
+
+.categories-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.category-btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border: none;
+  color: var(--white-color);
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background: none;
+}
+
+.category-btn:hover {
+  background-color: var(--hover-btn);
+}
+
+.category-btn {
+  font-size: 1.2rem;
+}
+
+.category-btn.active {
+  background-color: var(--primary-color);
 }
