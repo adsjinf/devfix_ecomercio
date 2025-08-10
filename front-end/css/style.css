@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;   /* herda da tag raiz (boa pra componentes) */
+  color: inherit;  /* evita cores “do nada” em filhos */   
+}
+
+h1 {
+    color: brown;
+    font-size: 100px;
+}
