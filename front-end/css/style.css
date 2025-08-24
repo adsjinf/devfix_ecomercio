@@ -15,6 +15,10 @@
     --border-color: #E9ECEF;
     --white-color: #FFFFFF;
     --hover-btn: rgba(255, 255, 255, 0.1);
+    --button-zero: #f80505ff;
+    --button-texto-zero: #FFFFFF;
+    --button: #167511ff;
+    --button-texto: #000000;
 }
 
 body {
@@ -25,7 +29,7 @@ body {
 }
 
 header {
-  background-color: val(--white-color);
+  background-color: var(--white-color);
   position: sticky;
   padding: 1rem 2rem;
   display: flex;
@@ -77,6 +81,8 @@ header {
 
 .categories-container {
   background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
 }
 
 .categories-bar {
@@ -135,4 +141,89 @@ footer {
   color: var(--white-color);
   text-align: center;
   padding: 2rem;
+}
+
+.products {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  border-color: var(--secondary-color);
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+  /* NOVO: força layout em coluna e o botão no rodapé */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-1rem);
+}
+
+.product-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-info{
+  padding: 1.5rem;
+    /* NOVO: ocupa o espaço disponível empurrando o footer pra baixo */
+  flex: 1;
+}
+
+.product-name{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.product-description{
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+ 
+.product-button {
+  border: none;
+  width: 100%;
+  background-color: var(--button);
+  color: var(--button-texto-zero);
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+  
+.product-button.zero {
+  background-color: var(--button-zero);
+}
+
+.button-footer {
+  display: flex;
+}
+
+.product-button:hover {
+    background-color: var(--secondary-color);
 }

@@ -19,7 +19,7 @@
                 <h1>TechStore</h1>
             </div>
             <div class="search-container">
-                <input type="text" placeholder="Buscar produtos...">
+                <input type="text" placeholder="Buscar produtos..." class="search-input">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </header>
@@ -27,29 +27,29 @@
         <!-- MENU SUPERIOR -->
         <div class="categories-container">
             <nav class="categories-bar">
-                <button class="category-btn  active">
+                <button class="category-btn active" data-category="all">
                     <i class="fa-solid fa-border-all"></i>
                     Todos
                 </button>
-                <button class="category-btn">
+                <button class="category-btn" data-category="smartphones">
                     <i class="fa-solid fa-mobile-retro"></i>
                     Smartphone
                 </button>
-                <button class="category-btn">
+                <button class="category-btn" data-category="laptops">
                     <i class="fa-solid fa-laptop"></i>
                     Notebooks
                 </button>
-                <button class="category-btn">
+                <button class="category-btn" data-category="headphones">
                     <i class="fa-solid fa-headphones"></i>
                     Fones
                 </button>
-                <button class="category-btn">
+                <button class="category-btn" data-category="accessories">
                     <i class="fa-solid fa-keyboard"></i>
                     Acessórios
                 </button>
-                <button class="category-btn">
+                <button class="category-btn" data-category="smartwatch">
                     <i class="fa-solid fa-clock"></i>
-                    SmartWatches
+                    SmartWatch
                 </button>
             </nav>
         </div>
@@ -60,7 +60,11 @@
         </section>
 
         <!-- ITENS -->
-        <main class="products-container">
+        <main class="products">
+            <div class="products-container">
+                <!-- Colocar os produtos na tela -->
+
+            </div>
 
         </main>
 
@@ -69,6 +73,7 @@
             <p>2025 - TechStore. Todos os Direitos Reservados</p>
          </footer>
     </div>
+    <script src="js/script.js"></script>
 
 </body>
 
